@@ -1,0 +1,30 @@
+@echo off
+
+echo Birthday calculater
+set /p birth_year=Enter your Birth Year:
+
+
+echo %date%
+set current_year=%date:~10,4%
+
+set /a age=%current_year%-%birth_year%
+echo you are %age% years old.
+
+set current_date=%date:~7,2%
+echo current date is %current_date%
+
+set current_month=%date:~4,2%
+echo current month is %current_month%
+
+echo current year is %current_year%
+set /p birth_day=Enter your Birth Date:
+
+set /a datediff=%current_date%-%birth_day%
+echo Date difference is %datediff%
+
+set /p birth_month=Enter your Birth Month:
+
+set /a monthdiff=%current_month%-%birth_month%
+echo Month difference is %monthdiff%
+
+pause
